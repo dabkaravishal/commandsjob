@@ -40,6 +40,7 @@ public class StartCommandsExecutionImpl {
 					+ "repo sync,. export,bitbake core-image-minimal";
 			
 			
+			
 //			String commands="cd /home/ubuntu/oe-core,repo init -u git://git.toradex.com/toradex-manifest.git -b kirkstone-6.x.y -m tdxref/default.xml," + 
 //					"repo sync," + 
 //					"bitbake core-image-minimal";
