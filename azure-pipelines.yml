@@ -14,3 +14,6 @@ steps:
   displayName: Getting present working directory
 - script: ant clean
   displayName: Ant clean process
+- script: ant build
+  displayName: Ant Build
+  
