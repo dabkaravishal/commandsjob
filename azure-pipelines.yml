@@ -10,5 +10,5 @@ pool:
   name: my-host
 
 steps:
-- script: date /t
+- script: date 
   displayName: Get the date
