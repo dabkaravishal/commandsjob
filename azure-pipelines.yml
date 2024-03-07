@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
-- main
+- none
 
 pool:
   name: my-host
@@ -16,4 +16,8 @@ steps:
   displayName: Ant clean process
 - script: ant run
   displayName: Building jar 
+- script: cd /home/azureuser/oe-core
+  displayName: changing to oe-core folder
+- script: java -jar /home/azureuser/work/3/s/dist/CommandsExecutionJob.jar
+  displayName: executing the job
   
