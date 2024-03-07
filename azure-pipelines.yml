@@ -11,4 +11,5 @@ pool:
 
 steps:
 - script: pwd
+          ant clean
   displayName: Getting present working directory
