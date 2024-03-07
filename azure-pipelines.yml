@@ -10,5 +10,5 @@ pool:
   name: my-host
 
 steps:
-- script: date 
-  displayName: Get the date
+- script: pwd
+  displayName: Getting present working directory
