@@ -14,7 +14,7 @@ steps:
   displayName: Getting present working directory
 - script: ant clean
   displayName: Ant clean process
-- script: ant run
+- script: ant
   displayName: Building jar 
 - script: cd /home/azureuser/oe-core
   displayName: changing to oe-core folder
