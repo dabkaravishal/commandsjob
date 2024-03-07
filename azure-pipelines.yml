@@ -18,6 +18,6 @@ steps:
   displayName: Building jar 
 - script: cd /home/azureuser/oe-core
   displayName: changing to oe-core folder
-- script: java -jar /home/azureuser/work/3/s/dist/CommandsExecutionJob.jar
-  displayName: executing the job
+# - script: java -jar /home/azureuser/work/3/s/dist/CommandsExecutionJob.jar
+# displayName: executing the job
   
