@@ -10,6 +10,7 @@ pool:
   name: my-host
 
 steps:
-- script: pwd
-          ant clean
+- script: pwd        
   displayName: Getting present working directory
+- script: ant clean
+  displayName: Ant clean process
