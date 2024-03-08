@@ -14,10 +14,18 @@ steps:
   displayName: Getting present working directory
 - script: ant clean
   displayName: Ant clean process
-- script: ant run
-  displayName: Building jar 
-- script: cd /home/azureuser/oe-core
-  displayName: changing to oe-core folder
-- script: java -jar /home/azureuser/work/3/s/dist/CommandsExecutionJob.jar
-  displayName: executing the job
+- script: ant compile
+  displayName: compiling code 
+- script: ant jar
+  displayName: building jar file
+- script: |
+    cd /home/azureuser/oe-core
+    pwd
+    echo "getting username"
+    whoami
+    echo "Job started running"
+    . export
+    java -jar /home/azureuser/work/3/s/dist/CommandsExecutionJob.jar
+    echo "job has been completed"
+  displayName: Executing JOb  
   
