@@ -21,11 +21,10 @@ steps:
 - script: |
     cd /home/azureuser/oe-core
     pwd
-  displayName: changing to oe-core folder
-- script: pwd        
-  displayName: Getting present working directory
-- script: whoami
-  displayName: getting username  
-#- script: java -jar /home/azureuser/work/3/s/dist/CommandsExecutionJob.jar
-#  displayName: executing the job
+    echo "getting username"
+    whoami
+    echo "Job started running"
+    java -jar /home/azureuser/work/3/s/dist/CommandsExecutionJob.jar
+    echo "job has been completed"
+  displayName: Executing JOb  
   
