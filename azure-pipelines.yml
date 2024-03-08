@@ -24,9 +24,8 @@ steps:
     echo "getting username"
     whoami
     echo "Job started running"
-    pwd
-    bitbake core-image-minimal
-    #java -jar /home/azureuser/work/3/s/dist/CommandsExecutionJob.jar
+    . export
+    java -jar /home/azureuser/work/3/s/dist/CommandsExecutionJob.jar
     echo "job has been completed"
   displayName: Executing JOb  
   
