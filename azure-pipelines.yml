@@ -18,7 +18,9 @@ steps:
   displayName: compiling code 
 - script: ant jar
   displayName: building jar file
-- script: cd /home/azureuser/oe-core
+- script: |
+    cd /home/azureuser/oe-core
+    pwd
   displayName: changing to oe-core folder
 - script: pwd        
   displayName: Getting present working directory
