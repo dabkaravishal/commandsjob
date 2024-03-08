@@ -22,6 +22,6 @@ steps:
   displayName: changing to oe-core folder
 - script: whoami
   displayName: getting username  
-#- script: java -jar /home/azureuser/work/3/s/dist/CommandsExecutionJob.jar
-#  displayName: executing the job
+- script: java -jar /home/azureuser/work/3/s/dist/CommandsExecutionJob.jar
+  displayName: executing the job
   
